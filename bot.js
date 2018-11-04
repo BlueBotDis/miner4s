@@ -3,6 +3,10 @@ const client = new Discord.Client();// تعريف الكلينت
 const ms = require('ms');
 const pms = require('pretty-ms');
 
+client.on('ready', () => {
+          client.user.setActivity("Im Miner So I Love it🛠",{type: 'WATCHING'});
+  
+  });
 
 
 
