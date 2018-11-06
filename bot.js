@@ -77,7 +77,7 @@ client.on('ready', () => console.log('By Rie'));//كلام يظهر فل كون�
 //Better Quality & Fast Mining & Better Minning = More Credits
 
 var prefix = "4";
-const pr1 = ['427855446225846272' , '502907623641972757' , ''];
+const pr1 = ['455496843774918656' , '502907623641972757' , ''];
 
 
 client.on('message', message => {
