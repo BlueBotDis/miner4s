@@ -96,7 +96,7 @@ client.on('ready', () => console.log('By Rie'));//كلام يظهر فل كون�
 //ProBot Miner V3 
 //Better Quality & Fast Mining & Better Minning = More Credits
 
-var prefix = "T";
+var prefix = "4";
 const pr1 = ['455496843774918656' , '502907623641972757' , ''];
 
 
