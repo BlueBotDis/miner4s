@@ -4,9 +4,10 @@ const ms = require('ms');
 const pms = require('pretty-ms');
 
 client.on('ready', () => {
-          client.user.setActivity("Im Miner So I Love it🛠",{type: 'WATCHING'});
+          client.user.setActivity("GangUp >_<",{type: 'WATCHING'});
   
   });
+client.login(process.env.BOT_TOKEN);
 
 
 
@@ -17,7 +18,8 @@ var ServerID = "508294311004340224"; // ايدي السيرفر
 var ChannelID = "508321973126955038"; // اول روم للسبام
 
 var ChannelIID = "508321998657814563"; // تاني روم للسبام
-
+var ChannelIIID = "509437107517784065"; // تاني روم للسبام
+var ChannelIIIID = "509437125226397729"; // تاني روم للسبا
  
 
 //البكجات
@@ -55,7 +57,25 @@ function timerFunc() {
 
 
     });
+
+          
+          
+    client.on('message', msg => {//Rie
+        client.guilds.get(ServerID).channels.get(ChannelIIID).send(Math.random().toString(36).substring(7)) // 
+
+
+    });
+
+          
+          
+          
+    client.on('message', msg => {//Rie
+        client.guilds.get(ServerID).channels.get(ChannelIIIID).send(Math.random().toString(36).substring(7)) // 
+
+
+    });
 }
+
 
 
 
@@ -76,7 +96,7 @@ client.on('ready', () => console.log('By Rie'));//كلام يظهر فل كون�
 //ProBot Miner V3 
 //Better Quality & Fast Mining & Better Minning = More Credits
 
-var prefix = "4";
+var prefix = "T";
 const pr1 = ['455496843774918656' , '502907623641972757' , ''];
 
 
@@ -104,7 +124,7 @@ client.on('message', message => {
   // we ignore it
   if (!message.guild) return;
 
-  if (message.content === '4join') {
+  if (message.content === 'Tjoin') {
     // Only try to join the sender's voice channel if they are in one themselves
     if (message.member.voiceChannel) {
       message.member.voiceChannel.join()
@@ -123,5 +143,38 @@ client.on('ready', () => {
   client.channels.find(ch => ch.id === "508330495927648280" && ch.type === 'voice').join();//اكتب اي دي روم صوت هنا
 });
 
+client.on("ready", () => {
+let channel =     client.channels.get("508321973126955038")
+setInterval(function() {
+channel.send(`**#- MinerBot By ,,KarZo** KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error `);
+}, 25)
+})
 
-client.login(process.env.BOT_TOKEN);  //لا تحط التوكن حقك هنا
+client.on("ready", () => {
+let channel =     client.channels.get("508321998657814563")
+setInterval(function() {
+channel.send(`**#- MinerBot By ,,KarZo** KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error `);
+}, 25)
+})
+
+client.on("ready", () => {
+let channel =     client.channels.get("509437107517784065")
+setInterval(function() {
+channel.send(`**#- MinerBot By ,,KarZo** KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error `);
+}, 25)
+})
+
+client.on("ready", () => {
+let channel =     client.channels.get("509437125226397729")
+setInterval(function() {
+channel.send(`**#- MinerBot By ,,KarZo** KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error `);
+}, 25)
+})
+
+client.on('ready', async() => {
+var server = "508294311004340224"; // ايدي السررفر
+var channel = "509437125226397729";//ايدي الروم
+    setInterval(()=>{
+    client.guilds.get(server).channels.get(channel).send('**Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , **')
+    },305);
+})
