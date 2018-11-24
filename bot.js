@@ -1,36 +1,23 @@
-const Discord = require('discord.js');//تعريف بكج
-const client = new Discord.Client();// تعريف الكلينت
-const ms = require('ms');
-const pms = require('pretty-ms');
-
-client.on('ready', () => {
-          client.user.setActivity("GangUp >_<",{type: 'WATCHING'});
-  
-  });
-client.login(process.env.BOT_TOKEN);
+const Discord = require('discord.js');//Package
+const client = new Discord.Client();//client
+const ms = require('ms');//Package
+const pms = require('pretty-ms');//Package
+client.login(process.env.BOT_TOKEN);//Token
 
 
 
 
 
 
-var ServerID = "508294311004340224"; // ايدي السيرفر
-var ChannelID = "508321973126955038"; // اول روم للسبام
+var ServerID = "508294311004340224"; // Server ID
+var Channel1ID = "508321973126955038"; // 1Room-Spam
+var Channel2ID = "508321998657814563"; // 2Room-Spam
+var Channel3ID = "509437107517784065"; // 3Room-Spam
+var Channel4ID = "509437125226397729"; // 4Room-Spam
+var Channel5ID = "515631702802956404"; // 5Room-Spam
+var Channel6ID = "515631782196936714"; // 6Room-Spam
 
-var ChannelIID = "508321998657814563"; // تاني روم للسبام
-var ChannelIIID = "509437107517784065"; // تاني روم للسبام
-var ChannelIIIID = "509437125226397729"; // تاني روم للسبا
- 
-
-//البكجات
-//npm i discord.js
-//npm install opusscript
-//npm install node-opus
-//npm install ffmpeg-binaries
-//npm i ms : For Good Quality
-//npm i pretty-ms : For Good Quality
-
-
+//{Spam Systel [log . spaming .elc]}
 
 client.on('Warn', console.warn);//
 
@@ -43,8 +30,8 @@ client.on('Reconnecting', () => console.log('Reconnecting...'));//If The Bot Des
 function timerFunc() {
   
   
-    client.on('message', msg => {//Rie
-        client.guilds.get(ServerID).channels.get(ChannelID).send(Math.random().toString(36).substring(7)) // 
+    client.on('message', msg => {//KarZo
+        client.guilds.get(ServerID).channels.get(Channel1ID).send(Math.random().toString(36).substring(7)) // 
 
 
     });
@@ -52,52 +39,56 @@ function timerFunc() {
 
 
 
-    client.on('message', msg => {
-        client.guilds.get(ServerID).channels.get(ChannelIID).send(Math.random().toString(36).substring(7)) // 
+    client.on('message', msg => {//KarZo
+        client.guilds.get(ServerID).channels.get(Channel2ID).send(Math.random().toString(36).substring(7)) // 
+
+
+    });
+
+          
+      client.on('message', msg => {//KarZo
+        client.guilds.get(ServerID).channels.get(Channel3ID).send(Math.random().toString(36).substring(7)) // 
+
+
+    });
+
+    client.on('message', msg => {//KarZo
+        client.guilds.get(ServerID).channels.get(Channel4ID).send(Math.random().toString(36).substring(7)) // 
+
+
+    });
+        
+    client.on('message', msg => {//KarZo
+        client.guilds.get(ServerID).channels.get(Channel5ID).send(Math.random().toString(36).substring(7)) // 
 
 
     });
 
           
           
-    client.on('message', msg => {//Rie
-        client.guilds.get(ServerID).channels.get(ChannelIIID).send(Math.random().toString(36).substring(7)) // 
+          
+    client.on('message', msg => {//KarZo
+        client.guilds.get(ServerID).channels.get(Channel6ID).send(Math.random().toString(36).substring(7)) // 
 
 
     });
 
-          
-          
-          
-    client.on('message', msg => {//Rie
-        client.guilds.get(ServerID).channels.get(ChannelIIIID).send(Math.random().toString(36).substring(7)) // 
-
-
-    });
 }
 
+//{Console Log}
+
+var timer = setTimeout(timerFunc, 870);//Speed
+
+client.on('ready', () => console.log('ProBot Credits Miner'));//Console Log ..
+
+client.on('ready', () => console.log('Lets Spamming'));//Console Log ..
 
 
 
+//{User System}
 
-
-var timer = setTimeout(timerFunc, 870);//Good Speed : 870 Very Fast : 305
-
-client.on('ready', () => console.log('ProBot Credits Miner v2'));//كلام يظهر فل كونسول
-
-client.on('ready', () => console.log('Lets Go'));//كلام يظهر فل كونسول
-
-client.on('ready', () => console.log('This Is A Beta Version And Maybe You Will Get Banned Quiqly Tip : Wait For The Official Release')); 
-
-client.on('ready', () => console.log('By Rie'));//كلام يظهر فل كونسول
-
-
-
-//ProBot Miner V3 
-//Better Quality & Fast Mining & Better Minning = More Credits
-
-var prefix = "4";
-const pr1 = ['455496843774918656' , '502907623641972757' , ''];
+var prefix = "1";
+const pr1 = ['455496843774918656' , '502907623641972757' , ''];//{ID Who Can Use Commands}
 
 
 client.on('message', message => {
@@ -142,39 +133,44 @@ client.on('message', message => {
 client.on('ready', () => {
   client.channels.find(ch => ch.id === "508330495927648280" && ch.type === 'voice').join();//اكتب اي دي روم صوت هنا
 });
-
 client.on("ready", () => {
-let channel =     client.channels.get("508321973126955038")
+let channel =     client.channels.get("508321973126955038")//1
 setInterval(function() {
 channel.send(`**#- MinerBot By ,,KarZo** KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error `);
 }, 25)
 })
 
 client.on("ready", () => {
-let channel =     client.channels.get("508321998657814563")
+let channel =     client.channels.get("508321998657814563")//2
 setInterval(function() {
 channel.send(`**#- MinerBot By ,,KarZo** KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error `);
 }, 25)
 })
 
 client.on("ready", () => {
-let channel =     client.channels.get("509437107517784065")
+let channel =     client.channels.get("509437107517784065")//3
 setInterval(function() {
 channel.send(`**#- MinerBot By ,,KarZo** KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error `);
-}, 25)
+},25)
 })
 
 client.on("ready", () => {
-let channel =     client.channels.get("509437125226397729")
+let channel =     client.channels.get("509437125226397729")//4
 setInterval(function() {
 channel.send(`**#- MinerBot By ,,KarZo** KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error `);
-}, 25)
+},25)
 })
 
-client.on('ready', async() => {
-var server = "508294311004340224"; // ايدي السررفر
-var channel = "509437125226397729";//ايدي الروم
-    setInterval(()=>{
-    client.guilds.get(server).channels.get(channel).send('**Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , **')
-    },305);
+client.on("ready", () => {
+let channel =     client.channels.get("515631702802956404")//5
+setInterval(function() {
+channel.send(`**#- MinerBot By ,,KarZo** KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error `);
+},25)
+})
+
+client.on("ready", () => {
+let channel =     client.channels.get("515631782196936714")//6
+setInterval(function() {
+channel.send(`**#- MinerBot By ,,KarZo** KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo KarZo Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error Error `);
+},25)
 })
