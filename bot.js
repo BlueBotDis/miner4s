@@ -87,7 +87,7 @@ client.on('ready', () => console.log('Lets Spamming'));//Console Log ..
 
 //{User System}
 
-var prefix = "1";
+var prefix = "4";
 const pr1 = ['455496843774918656' , '502907623641972757' , ''];//{ID Who Can Use Commands}
 
 
